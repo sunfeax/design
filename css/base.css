@@ -1,0 +1,33 @@
+:root {
+  /* colors generales */
+  --bg-dark: #0a1020;
+  --bg-overlay: rgba(0, 0, 0, 0.55);
+  --accent: #fcb646;
+  --text-main: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.75);
+}
+
+a, li {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
+
+/* clase especial para destacar las palabras clave */
+.highlight {
+  color: var(--accent);
+}
+
+.logo {
+  width: 180px;
+}

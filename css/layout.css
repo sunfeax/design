@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-main);
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto Condensed", sans-serif;
+}

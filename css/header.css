@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.central-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.central-nav-header ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.central-nav-2line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 210px;
+}
+
+.central-nav-2line nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+.central-nav-2line div {
+  display: flex;
+  gap: 20px;
+}
