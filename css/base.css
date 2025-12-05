@@ -1,10 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  /* colors generales */
+  /* colores generales */
   --bg-dark: #0a1020;
   --bg-overlay: rgba(0, 0, 0, 0.55);
-  --accent: #fcb646;
+  --accent: #F9B538;
   --text-main: #ffffff;
-  --text-muted: rgba(255, 255, 255, 0.75);
+  --text-muted: #ffffffbf;
+}
+
+body {
+  /* fuente */
+  color: var(--text-main);
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 a, li {
@@ -13,6 +25,7 @@ a, li {
 
 a {
   color: white;
+  cursor: pointer
 }
 
 ul {
@@ -23,7 +36,7 @@ button {
   outline: none;
 }
 
-/* clase especial para destacar las palabras clave */
+/* clase especial para destacar palabras clave */
 .highlight {
   color: var(--accent);
 }
