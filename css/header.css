@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  border: 2px solid rgba(95, 95, 95, 0.548);
+  border: 1px solid rgba(95, 95, 95, 0.548);
   padding: 15px;
 }
 
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   gap: 200px;
-  border: 1.5px solid rgba(95, 95, 95, 0.548);
+  border: 1px solid rgba(95, 95, 95, 0.548);
 }
 
 .header-mainbar nav ul {
@@ -28,4 +28,6 @@
 .header-mainbar div {
   display: flex;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
 }

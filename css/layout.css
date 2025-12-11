@@ -7,7 +7,7 @@ header {
   background: transparent;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0 20px 0 0;
   top: 0;
   width: 100%;
   z-index: 1;
