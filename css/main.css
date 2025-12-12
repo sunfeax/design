@@ -267,3 +267,69 @@
   right: 20px;
   bottom: 0;
 }
+
+
+/* Subscribe Section */
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  background: var(--accent);
+  color: var(--text-main);
+  border-radius: 5px;
+  padding: 50px 70px;
+}
+
+.subscribe h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subscribe p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 700px;
+  margin: 32px auto 0;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 50px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-form input {
+  padding: 16px 18px;
+  border: none;
+  border-radius: 50px;
+  width: 600px;
+  font-size: 15px;
+  color: var(--text-descripcion);
+  background: #ffffff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.07);
+  position: relative;
+}
+
+.subscribe-form input {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 385px;
+  border: none;
+  padding: 15px 28px;
+  border-radius: 999px;
+  background: #7d32ff;
+  color: var(--text-main);
+  font-size: 15px;
+  font-weight: 600;
+  width: 140px;
+  box-shadow: 0 12px 24px rgba(125, 50, 255, 0.35);
+  cursor: pointer;
+}
