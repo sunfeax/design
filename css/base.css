@@ -1,11 +1,11 @@
 :root {
   /* colores generales */
-  --bg-dark: #0a1020;
-  --accent: #F9B538;
-  --text-main: #ffffff;
+  --black: #0a1020;
+  --orange: #F9B538;
+  --white: #ffffff;
   --text-encabezados: #2f3a45;
   --text-descripcion: #6f7e88;
-  --text-muted: #ffffffbf;
+  --bg-snow: #f7f8f9;
 }
 
 * {
@@ -17,7 +17,7 @@
 
 body {
   /* fuente */
-  color: var(--text-main);
+  color: var(--white);
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -40,9 +40,13 @@ button {
 
 /* clase especial para destacar palabras clave */
 .highlight {
-  color: var(--accent);
+  color: var(--orange);
 }
 
 .logo {
   width: 180px;
+}
+
+.icon {
+  color: var(--white)
 }
