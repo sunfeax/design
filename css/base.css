@@ -48,6 +48,10 @@ button {
   outline: none;
 }
 
+strong {
+  font-weight: 800;
+}
+
 /* clase especial para destacar palabras clave */
 .highlight {
   color: var(--orange);
@@ -59,4 +63,13 @@ button {
 
 .icon {
   color: var(--white)
+}
+
+.squares {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.square {
+  font-size: 10px;
 }
