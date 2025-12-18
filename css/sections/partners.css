@@ -1,0 +1,26 @@
+/* Partners Section */
+#partners {
+  width: 100%;
+  padding: 40px 20px 70px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#partners h2 {
+  display: none;
+}
+
+#partners .partner-logos {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.partner-logos img {
+  height: 70px;
+}

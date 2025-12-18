@@ -1,0 +1,31 @@
+/* About Section */
+#about-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 20px;
+  background: var(--white);
+  gap: 50px;
+}
+
+.about-text {
+  max-width: 450px;
+}
+
+.about-text h2 {
+  font-size: var(--font-size-title-xl);
+  margin-bottom: 10px;
+  color: var(--text-encabezados);
+}
+
+.about-text p {
+  font-size: var(--font-size-body);
+  color: var(--text-descripcion);
+  margin-bottom: 30px;
+}
+
+.about-video img {
+  width: 450px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+}

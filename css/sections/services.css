@@ -1,0 +1,85 @@
+/* Service Section */
+#services {
+  width: 100%;
+  padding: 80px 20px;
+  background: var(--bg-snow);
+  text-align: center;
+}
+
+#services h2 {
+  display: none;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* card */
+.service-cards article {
+  width: 330px;
+  background: var(--white);
+  padding: 30px 25px;
+  border-radius: var(--radius-sm);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.214);
+}
+
+.service-cards h3 {
+  font-size: var(--font-size-heading);
+  color: var(--text-encabezados);
+  margin-bottom: 12px;
+}
+
+.service-cards p {
+  font-size: var(--font-size-body);
+  color: var(--text-descripcion);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* btn learn more */
+.service-cards a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-descripcion);
+  font-size: var(--font-size-body);
+  transition: all 0.3s ease;
+}
+
+/* número grande dentro los artículos */
+.service-cards span {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  font-size: var(--font-size-display);
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+/* un hover en futuro */
+.service-cards .active {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/we-build.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: translateY(-10px);
+}
+
+.service-cards .active a {
+  color: var(--orange);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.service-cards .active h3,
+.service-cards .active p {
+  color: var(--white);
+}
+
+.service-cards .active span {
+  color: var(--text-descripcion);
+}
