@@ -10,7 +10,7 @@
   height: 100vh;
 
   /* imágen al fondo */
-  background-image: url('../../img/background.png');
+  background-image: url('../../img/backgrounds/background.png');
   background-size: cover;
   background-position: center;
 }

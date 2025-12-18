@@ -62,7 +62,7 @@
 
 /* un hover en futuro */
 .service-cards .active {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/we-build.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/backgrounds/we-build.jpg);
   background-size: cover;
   background-position: center;
   transform: translateY(-10px);
