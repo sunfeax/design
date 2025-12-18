@@ -6,6 +6,16 @@
   --text-encabezados: #2f3a45;
   --text-descripcion: #6f7e88;
   --bg-snow: #f7f8f9;
+  /* tamaños de fuente */
+  --font-size-display: 120px;
+  --font-size-hero: 80px;
+  --font-size-title-xl: 36px;
+  --font-size-title-lg: 32px;
+  --font-size-title-md: 28px;
+  --font-size-lead: 22px;
+  --font-size-heading: 20px;
+  --font-size-subheading: 18px;
+  --font-size-body: 15px;
 }
 
 * {
