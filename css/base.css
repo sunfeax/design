@@ -67,10 +67,11 @@ strong {
 }
 
 .squares {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: flex;
 }
 
 .square {
   font-size: 10px;
+  color: #F9B538;
 }
