@@ -257,55 +257,57 @@
           </div>
           <a href="#" class="btn-hollow">View All</a>
         </div>
-
-        <div class="project-cards">
-          <article class="project-card">
-            <div class="project-image">
-              <img src="./img/projects/projects-section1.jpeg" alt="" />
-              <div class="project-label">
-                <h3 class="project-title">New Construction Project</h3>
-                <a class="project-link" href="#">
-                  <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
+        
+        <div class="project-cards-wrapper">
+          <div class="project-cards">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="./img/projects/projects-section1.jpeg" alt="" />
+                <div class="project-label">
+                  <h3 class="project-title">New Construction Project</h3>
+                  <a class="project-link" href="#">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
-
-          <article class="project-card active">
-            <div class="project-image">
-              <img src="./img/projects/projects-section2.jpeg" alt="" />
-              <div class="project-label">
-                <h3 class="project-title">New Construction Project</h3>
-                <a class="project-link" href="#">
-                  <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
+            </article>
+  
+            <article class="project-card active">
+              <div class="project-image">
+                <img src="./img/projects/projects-section2.jpeg" alt="" />
+                <div class="project-label">
+                  <h3 class="project-title">New Construction Project</h3>
+                  <a class="project-link" href="#">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
-          
-          <article class="project-card">
-            <div class="project-image">
-              <img src="./img/projects/projects-section3.jpeg" alt="" />
-              <div class="project-label">
-                <h3 class="project-title">New Construction Project</h3>
-                <a class="project-link" href="#">
-                  <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
+            </article>
+            
+            <article class="project-card">
+              <div class="project-image">
+                <img src="./img/projects/projects-section3.jpeg" alt="" />
+                <div class="project-label">
+                  <h3 class="project-title">New Construction Project</h3>
+                  <a class="project-link" href="#">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-image">
-              <img src="./img/projects/projects-section4.jpeg" alt="" />
-              <div class="project-label">
-                <h3 class="project-title">New Construction Project</h3>
-                <a class="project-link" href="#">
-                  <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
+            </article>
+  
+            <article class="project-card">
+              <div class="project-image">
+                <img src="./img/projects/projects-section4.jpeg" alt="" />
+                <div class="project-label">
+                  <h3 class="project-title">New Construction Project</h3>
+                  <a class="project-link" href="#">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -340,7 +342,7 @@
             <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
             <footer class="reviewer">
               <div class="avatar-box">
-                <img src="./img/reviews/avatar1.png" alt="Andrea Smith portrait">
+                <img src="./img/reviews/avatar1.png" alt="Vincent Smith portrait">
               </div>
               <div class="review-meta">
                 <p class="name">Vincent Smith</p>
@@ -360,7 +362,7 @@
             <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
             <footer class="reviewer">
               <div class="avatar-box">
-                <img src="./img/reviews/avatar2.png" alt="Andrea Smith portrait">
+                <img src="./img/reviews/avatar2.png" alt="Thomas Smith portrait">
               </div>
               <div class="review-meta">
                 <p class="name">Thomas Smith</p>
@@ -380,7 +382,7 @@
             <p>We have done five major commercial projects with Prelude and they represent what it best in a general contractor, incuding special attention to the plan design and the constant attention to the job.</p>
             <footer class="reviewer">
               <div class="avatar-box">
-                <img src="./img/reviews/avatar3.png" alt="Andrea Smith portrait">
+                <img src="./img/reviews/avatar3.png" alt="Ernest Smith portrait">
               </div>
               <div class="review-meta">
                 <p class="name">Ernest Smith</p>
@@ -427,8 +429,7 @@
 
       <section id="faq">
         <div class="faq-image">
-          <img src="./img/quality/quality-section2.png" alt="Construction worker" />
-          <div class="faq-dots"></div>
+          <img src="./img/faq/faq-section.jpg" alt="Construction worker" />
         </div>
 
         <div class="faq-content">
@@ -436,22 +437,28 @@
           <div class="faq-list">
             <article class="faq-item">
               <div class="question">
-                <span class="toggle">+</span>
+                <button class="toggle-btn">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
                 <p>What size construction project can Prelude manage?</p>
               </div>
             </article>
 
             <article class="faq-item active">
               <div class="question">
-                <span class="toggle">-</span>
+                <button class="toggle-btn">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
                 <p>How do you determine the final cost of the project?</p>
               </div>
-              <p class="answer">We work with every customer to clearly define the project based on their priorities and unique needs, then craft a detailed and customized estimate.</p>
+              <p class="answer">First we work with every customer in order to clearly define the project, based on their priorities and unique needs. A detailed and customized estimate is developed, which gives you the accurate project cost.</p>
             </article>
 
             <article class="faq-item">
               <div class="question">
-                <span class="toggle">+</span>
+                <button class="toggle-btn">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
                 <p>Why should I purchase a home instead of renting?</p>
               </div>
             </article>

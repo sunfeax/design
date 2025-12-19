@@ -7,6 +7,8 @@
   width: 100%;
   margin-bottom: 30px;
   background: var(--white);
+  overflow: hidden;
+  padding-bottom: 60px;
 }
 
 #projects .projects-header {
@@ -25,10 +27,18 @@
   margin-bottom: 10px;
 }
 
-#projects .project-cards {
+.project-cards {
   display: flex;
   gap: 30px;
   width: max-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.projects-cards-wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
 .project-card {
