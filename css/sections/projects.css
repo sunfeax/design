@@ -27,6 +27,7 @@
   margin-bottom: 10px;
 }
 
+/* pista centrada manualmente para mantener alineadas las tarjetas en horizontal */
 .project-cards {
   display: flex;
   gap: 30px;
@@ -36,6 +37,7 @@
   transform: translateX(-50%);
 }
 
+/* máscara que recorta el carrusel y solo deja ver la franja central */
 .projects-cards-wrapper {
   width: 100%;
   overflow: hidden;
@@ -63,6 +65,7 @@
   display: block;
 }
 
+/* etiqueta flotante sobre la imagen que se eleva en la tarjeta activa */
 .project-label {
   position: absolute;
   left: 50%;
