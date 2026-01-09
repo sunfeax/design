@@ -18,37 +18,36 @@
     --font-size-body: 14px;
   }
 
-  .header-topbar {
-    flex-direction: column;
-    gap: 12px;
+  header {
+    position: absolute;
+    padding: 10px 12px 0;
+    background: transparent;
   }
 
-  .header-topbar ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    padding: 10px;
+  .header-topbar {
+    display: none;
   }
 
   .header-mainbar {
-    flex-direction: column;
-    gap: 18px;
-    padding: 12px 0 18px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0 16px;
+    border: none;
   }
 
-  .header-mainbar nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px 24px;
-  }
-
+  .header-mainbar nav,
   .header-mainbar div {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+  }
+
+  .header-burger {
+    display: inline-flex;
   }
 
   .logo {
-    width: 150px;
+    width: 130px;
   }
 
   #hero-section {
@@ -76,6 +75,7 @@
   #about-block {
     flex-direction: column;
     text-align: center;
+    padding: 60px 20px;
   }
 
   .about-text {
@@ -91,25 +91,111 @@
     max-width: 520px;
   }
 
+  #services {
+    padding: 60px 20px;
+  }
+
   .service-cards {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
   .service-cards article {
-    width: 300px;
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 28px 22px 24px;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+  }
+
+  .service-cards article:nth-child(1) {
+    background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-design.webp");
+  }
+
+  .service-cards article:nth-child(2) {
+    background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-build.jpg");
+  }
+
+  .service-cards article:nth-child(3) {
+    background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-maintain.webp");
+  }
+
+  .service-cards h3 {
+    color: var(--white);
+  }
+
+  .service-cards p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .service-cards a {
+    align-self: center;
+    min-width: 150px;
+    height: 40px;
+    padding: 8px 18px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .service-cards span {
+    color: rgba(255, 255, 255, 0.25);
+    top: auto;
+    right: 16px;
+    bottom: 12px;
+  }
+
+  .service-cards .active a {
+    text-decoration: none;
+  }
+
+  .service-cards .active {
+    transform: none;
+  }
+
+  .service-cards .active a {
+    color: var(--orange);
+  }
+
+  .service-cards .active h3 {
+    color: var(--white);
+  }
+
+  .service-cards .active p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .service-cards .active span {
+    color: rgba(255, 255, 255, 0.25);
+  }
+
+  #quality {
+    padding: 60px 20px;
   }
 
   .quality-cards {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
   .quality-cards article {
-    width: 280px;
+    width: 100%;
+    max-width: 420px;
     height: auto;
   }
 
   .quality-cards .img-box {
-    height: 180px;
+    height: 200px;
   }
 
   #stats {
@@ -133,50 +219,102 @@
     width: 100%;
   }
 
+  #projects {
+    padding: 40px 16px;
+    margin-bottom: 0;
+  }
+
   #projects .projects-header {
-    width: 90%;
+    width: 100%;
+    padding: 0;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
   }
 
   #projects .projects-header h2 {
     width: 100%;
   }
 
+  #projects .projects-header .squares {
+    justify-content: center;
+  }
+
   .project-cards {
     width: 100%;
     left: 0;
     transform: none;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
 
   .project-card {
-    width: 360px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .project-image {
+    height: 180px;
   }
 
   .project-label {
-    width: 300px;
+    width: calc(100% - 24px);
+    height: auto;
+    padding: 10px 12px;
+    left: 12px;
+    bottom: 12px;
+    transform: none;
+    margin: 0;
+  }
+
+  .project-card.active .project-label {
+    bottom: 12px;
+    color: inherit;
+  }
+
+  .project-card.active .project-title,
+  .project-card.active .project-link {
+    color: var(--text-descripcion);
+  }
+
+  #partners {
+    padding: 60px 20px;
   }
 
   #partners .partner-logos {
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: center;
+    justify-items: center;
   }
 
   .partner-logos img {
     height: 60px;
   }
 
+  .review-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    justify-items: center;
+  }
+
   .review-card {
-    width: 240px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  #reviews {
+    padding: 60px 20px;
   }
 
   #faq {
     flex-direction: column;
     gap: 30px;
-    padding-bottom: 40px;
+    padding: 60px 20px;
   }
 
   .faq-image {
@@ -211,6 +349,25 @@
     flex-wrap: wrap;
     gap: 40px;
     padding: 0 20px;
+  }
+
+  .brand {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 16px;
+    text-align: left;
+  }
+
+  .brand p {
+    margin: 0;
+    max-width: 320px;
+  }
+
+  .socials {
+    flex-shrink: 0;
   }
 
   .nav-blocks {
@@ -499,6 +656,7 @@
     left: 12px;
     bottom: 12px;
     transform: none;
+    margin: 0;
   }
 
   #partners {
@@ -620,6 +778,9 @@
   .brand {
     width: 100%;
     align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px 16px;
   }
 
   .social {
@@ -683,7 +844,6 @@
   }
 
   .project-card.active .project-label {
-    bottom: 12px;
     color: inherit;
   }
 
