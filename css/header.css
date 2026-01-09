@@ -31,3 +31,20 @@
   align-items: center;
   justify-content: center;
 }
+
+.header-burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background: transparent;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.header-burger .icon-burger {
+  width: 26px;
+  height: 26px;
+  display: block;
+}

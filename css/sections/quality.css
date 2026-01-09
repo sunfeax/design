@@ -88,3 +88,7 @@
   right: 20px;
   bottom: 0;
 }
+
+.quality-cards .active .arrow {
+  color: var(--orange);
+}
