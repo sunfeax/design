@@ -52,9 +52,9 @@
 
   #hero-section {
     height: auto;
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 120px 20px 80px;
-    gap: 30px;
+    gap: 70px;
   }
 
   #hero-section h1 {
@@ -586,6 +586,10 @@
     bottom: 12px;
   }
 
+  .quality-cards .active .arrow {
+    color: var(--text-descripcion);
+  }
+
   #stats {
     flex-direction: column;
     align-items: center;
@@ -778,9 +782,9 @@
   .brand {
     width: 100%;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 10px 16px;
+    gap: 20px;
   }
 
   .social {
@@ -845,11 +849,16 @@
 
   .project-card.active .project-label {
     color: inherit;
+    bottom: 12px;
   }
 
   .project-card.active .project-title,
   .project-card.active .project-link {
     color: var(--text-descripcion);
+  }
+
+  .project-title {
+    font-size: var(--font-size-body);
   }
 
   .faq-item.active .question {
