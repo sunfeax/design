@@ -92,3 +92,74 @@
 .quality-cards .active .arrow {
   color: var(--orange);
 }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  #quality {
+    padding: 60px 20px;
+  }
+
+  .quality-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .quality-cards article {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+  .quality-cards .img-box {
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  #quality {
+    padding: 60px 16px;
+  }
+
+  .quality-text {
+    margin-bottom: 28px;
+  }
+
+  .quality-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .quality-cards article {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    padding-bottom: 32px;
+  }
+
+  .quality-cards .img-box {
+    height: 150px;
+  }
+
+  .quality-cards h3 {
+    margin: 14px 16px 8px;
+  }
+
+  .quality-cards p {
+    margin: 0 16px 16px;
+  }
+
+  .arrow {
+    right: 16px;
+    bottom: 12px;
+  }
+
+  .quality-cards .active .arrow {
+    color: var(--text-descripcion);
+  }
+
+  .quality-cards .active {
+    border-bottom: 0;
+  }
+}

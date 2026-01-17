@@ -58,3 +58,45 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
   cursor: pointer;
 }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  #subscribe {
+    width: 90%;
+    padding: 40px 30px;
+    top: 60px;
+  }
+
+  #subscribe .subscribe-form {
+    width: 100%;
+  }
+
+  .subscribe-form input {
+    padding: 16px 140px 16px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #subscribe {
+    width: 92%;
+    padding: 36px 20px;
+    top: 40px;
+  }
+
+  #subscribe .subscribe-form {
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .subscribe-form input {
+    padding: 14px 18px;
+  }
+
+  .subscribe-form button {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+}

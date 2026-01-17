@@ -83,3 +83,177 @@
 .service-cards .active span {
   color: var(--text-descripcion);
 }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  #services {
+    padding: 60px 20px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .service-cards article {
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 28px 22px 24px;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+  }
+
+  .service-cards article:nth-child(1) {
+    background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../../img/backgrounds/we-design.webp");
+  }
+
+  .service-cards article:nth-child(2) {
+    background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../../img/backgrounds/we-build.jpg");
+  }
+
+  .service-cards article:nth-child(3) {
+    background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../../img/backgrounds/we-maintain.webp");
+  }
+
+  .service-cards h3 {
+    color: var(--white);
+  }
+
+  .service-cards p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .service-cards a {
+    align-self: center;
+    min-width: 150px;
+    height: 40px;
+    padding: 8px 18px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .service-cards span {
+    color: rgba(255, 255, 255, 0.25);
+    top: auto;
+    right: 16px;
+    bottom: 12px;
+  }
+
+  .service-cards .active a {
+    text-decoration: none;
+  }
+
+  .service-cards .active {
+    transform: none;
+  }
+
+  .service-cards .active a {
+    color: var(--orange);
+  }
+
+  .service-cards .active h3 {
+    color: var(--white);
+  }
+
+  .service-cards .active p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .service-cards .active span {
+    color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+@media (max-width: 767px) {
+  #services {
+    padding: 60px 16px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-cards article {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 28px 22px 24px;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+  }
+
+  .service-cards article:nth-child(1) {
+    background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../../img/backgrounds/we-design.webp");
+  }
+
+  .service-cards article:nth-child(2) {
+    background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../../img/backgrounds/we-build.jpg");
+  }
+
+  .service-cards article:nth-child(3) {
+    background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../../img/backgrounds/we-maintain.webp");
+  }
+
+  .service-cards h3 {
+    color: var(--white);
+  }
+
+  .service-cards p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .service-cards a {
+    align-self: center;
+    min-width: 150px;
+    height: 40px;
+    padding: 8px 18px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .service-cards span {
+    color: rgba(255, 255, 255, 0.25);
+    top: auto;
+    right: 16px;
+    bottom: 12px;
+  }
+
+  .service-cards .active {
+    transform: none;
+  }
+
+  .service-cards .active a {
+    color: var(--orange);
+    text-decoration: none;
+  }
+
+  .service-cards .active h3 {
+    color: var(--white);
+  }
+
+  .service-cards .active p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .service-cards .active span {
+    color: rgba(255, 255, 255, 0.25);
+  }
+}

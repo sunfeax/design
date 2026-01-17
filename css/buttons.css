@@ -37,3 +37,16 @@
   font-size: var(--font-size-body);
   color: var(--orange);
 }
+
+@media (max-width: 767px) {
+  .btn-ghost,
+  .btn-primary,
+  .btn-secondary,
+  .btn-hollow,
+  .cta-btn {
+    min-width: 150px;
+    height: 40px;
+    padding: 8px 18px;
+    font-size: var(--font-size-body);
+  }
+}

@@ -24,3 +24,39 @@
 .partner-logos img {
   height: 70px;
 }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  #partners {
+    padding: 60px 20px;
+  }
+
+  #partners .partner-logos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .partner-logos img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #partners {
+    padding: 40px 16px;
+  }
+
+  #partners .partner-logos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .partner-logos img {
+    height: 50px;
+  }
+}

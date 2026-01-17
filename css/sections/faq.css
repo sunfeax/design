@@ -91,3 +91,49 @@
   background: var(--white);
   color: var(--text-descripcion);
 }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  #faq {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 20px;
+  }
+
+  .faq-image {
+    width: 100%;
+    max-width: 360px;
+    height: 280px;
+  }
+
+  .faq-content {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+  #faq {
+    flex-direction: column;
+    gap: 24px;
+    padding: 60px 16px;
+  }
+
+  .faq-image {
+    width: 100%;
+    max-width: 320px;
+    height: 240px;
+  }
+
+  .faq-item.active .question {
+    background: var(--orange);
+    color: var(--white);
+  }
+
+  .faq-item.active .toggle-btn {
+    color: var(--white);
+  }
+
+  .faq-item.active .answer {
+    background: var(--white);
+    color: var(--text-descripcion);
+  }
+}

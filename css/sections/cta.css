@@ -30,3 +30,27 @@
   font-size: var(--font-size-body);
   font-weight: 500;
 }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  #cta {
+    width: 80%;
+    margin: -140px auto 50px;
+    padding: 50px 20px;
+  }
+
+  #cta h2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #cta {
+    width: 92%;
+    margin: -100px auto 40px;
+    padding: 40px 16px;
+  }
+
+  #cta h2 {
+    width: 100%;
+  }
+}

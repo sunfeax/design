@@ -84,3 +84,103 @@
 .links a {
   color: #7b8a96;
 }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .footer {
+    padding-top: 160px;
+  }
+
+  .footer-top {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .brand {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 16px;
+    text-align: left;
+  }
+
+  .brand p {
+    margin: 0;
+    max-width: 320px;
+  }
+
+  .socials {
+    flex-shrink: 0;
+  }
+
+  .nav-blocks {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .bottom-row {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 110px;
+    padding-bottom: 16px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .brand {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-blocks {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-blocks .title {
+    margin-bottom: 16px;
+  }
+
+  .nav-blocks ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom hr {
+    margin: 16px 0;
+  }
+
+  .bottom-row {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
