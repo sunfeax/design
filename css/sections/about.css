@@ -30,7 +30,7 @@
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (768px <= width <= 1000px) {
   #about-block {
     flex-direction: column;
     text-align: center;
@@ -51,7 +51,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   #about-block {
     flex-direction: column;
     text-align: center;

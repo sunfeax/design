@@ -98,7 +98,7 @@
   color: var(--text-descripcion);
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (768px <= width <= 1000px) {
   #faq {
     flex-direction: column;
     gap: 30px;
@@ -116,7 +116,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   #faq {
     flex-direction: column;
     gap: 24px;

@@ -131,7 +131,7 @@
   background: var(--orange);
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (768px <= width <= 1000px) {
   .review-cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -149,7 +149,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   #reviews {
     padding: 60px 16px;
   }

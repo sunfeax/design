@@ -84,7 +84,7 @@
   color: var(--text-descripcion);
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (768px <= width <= 1000px) {
   #services {
     padding: 60px 20px;
   }
@@ -173,7 +173,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   #services {
     padding: 60px 16px;
   }
