@@ -58,6 +58,12 @@
   background: var(--white);
 }
 
+.question-title {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
 .toggle-btn {
   display: flex;
   align-items: center;

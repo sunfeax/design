@@ -87,6 +87,7 @@
   font-size: var(--font-size-heading);
   right: 20px;
   bottom: 0;
+  color: var(--text-descripcion);
 }
 
 .quality-cards .active .arrow {
