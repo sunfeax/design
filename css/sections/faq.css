@@ -99,7 +99,7 @@
     }
   }
 
-  @media (768px <= width <= 1000px) {
+  @media (768px <= width <= 1200px) {
     flex-direction: column;
     gap: 30px;
     padding: 60px 20px;

@@ -48,7 +48,7 @@
     }
   }
 
-  @media (768px <= width <= 1000px) {
+  @media (768px <= width <= 1200px) {
     flex-wrap: wrap;
     gap: 30px;
     padding-bottom: 200px;

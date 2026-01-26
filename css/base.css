@@ -75,17 +75,17 @@ strong {
   }
 }
 
-@media (768px <= width <= 1000px) {
+@media (768px <= width <= 1200px) {
   :root {
-    --font-size-display: 90px;
-    --font-size-hero: 56px;
-    --font-size-title-xl: 30px;
-    --font-size-title-lg: 28px;
-    --font-size-title-md: 24px;
-    --font-size-lead: 19px;
-    --font-size-heading: 18px;
-    --font-size-subheading: 16px;
-    --font-size-body: 14px;
+    --font-size-display: 92px;
+    --font-size-hero: 58px;
+    --font-size-title-xl: 32px;
+    --font-size-title-lg: 30px;
+    --font-size-title-md: 26px;
+    --font-size-lead: 21px;
+    --font-size-heading: 20px;
+    --font-size-subheading: 18px;
+    --font-size-body: 16px;
   }
 
   .logo {
@@ -95,15 +95,15 @@ strong {
 
 @media (width <= 767px) {
   :root {
-    --font-size-display: 64px;
-    --font-size-hero: 40px;
-    --font-size-title-xl: 24px;
-    --font-size-title-lg: 22px;
-    --font-size-title-md: 20px;
-    --font-size-lead: 16px;
-    --font-size-heading: 16px;
-    --font-size-subheading: 15px;
-    --font-size-body: 13px;
+    --font-size-display: 66px;
+    --font-size-hero: 42px;
+    --font-size-title-xl: 26px;
+    --font-size-title-lg: 24px;
+    --font-size-title-md: 22px;
+    --font-size-lead: 18px;
+    --font-size-heading: 18px;
+    --font-size-subheading: 17px;
+    --font-size-body: 15px;
   }
 
   .logo {

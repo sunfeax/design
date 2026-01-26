@@ -16,13 +16,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 200px;
+  gap: 100px;
   border: 1px solid rgba(95, 95, 95, 0.548);
 
   nav {
     ul {
       display: flex;
-      gap: 40px;
+      gap: 28px;
     }
   }
 
@@ -51,7 +51,7 @@
   }
 }
 
-@media (768px <= width <= 1000px) {
+@media (768px <= width <= 1200px) {
   .header-topbar {
     display: none;
   }
