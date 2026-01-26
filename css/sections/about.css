@@ -6,75 +6,77 @@
   padding: 80px 20px;
   background: var(--white);
   gap: 50px;
-}
 
-.about-text {
-  max-width: 450px;
-}
+  .about-text {
+    max-width: 450px;
 
-.about-text h2 {
-  font-size: var(--font-size-title-xl);
-  margin-bottom: 10px;
-  color: var(--text-encabezados);
-}
+    h2 {
+      font-size: var(--font-size-title-xl);
+      margin-bottom: 10px;
+      color: var(--text-encabezados);
+    }
 
-.about-text p {
-  font-size: var(--font-size-body);
-  color: var(--text-descripcion);
-  margin-bottom: 30px;
-}
+    p {
+      font-size: var(--font-size-body);
+      color: var(--text-descripcion);
+      margin-bottom: 30px;
+    }
+  }
 
-.about-video img {
-  width: 450px;
-  border-radius: var(--radius-sm);
-  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
-}
+  .about-video {
+    img {
+      width: 450px;
+      border-radius: var(--radius-sm);
+      box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+    }
+  }
 
-@media (768px <= width <= 1000px) {
-  #about-block {
+  @media (768px <= width <= 1000px) {
     flex-direction: column;
     text-align: center;
     padding: 60px 20px;
+
+    .about-text {
+      max-width: 600px;
+
+      .squares {
+        justify-content: center;
+      }
+    }
+
+    .about-video {
+      img {
+        width: 100%;
+        max-width: 520px;
+      }
+    }
   }
 
-  .about-text {
-    max-width: 600px;
-  }
-
-  .about-text .squares {
-    justify-content: center;
-  }
-
-  .about-video img {
-    width: 100%;
-    max-width: 520px;
-  }
-}
-
-@media (width <= 767px) {
-  #about-block {
+  @media (width <= 767px) {
     flex-direction: column;
     text-align: center;
     padding: 60px 16px;
-  }
 
-  .about-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 520px;
-  }
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 520px;
 
-  .about-text a {
-    align-self: center;
-  }
+      a {
+        align-self: center;
+      }
 
-  .about-text .squares {
-    justify-content: center;
-  }
+      .squares {
+        justify-content: center;
+      }
+    }
 
-  .about-video img {
-    width: 100%;
-    max-width: 420px;
+    .about-video {
+      img {
+        width: 100%;
+        max-width: 420px;
+      }
+    }
   }
 }

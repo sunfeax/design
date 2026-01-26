@@ -25,7 +25,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   /* fuente */
   color: var(--white);
@@ -38,7 +37,7 @@ a, li {
 
 a {
   color: white;
-  cursor: pointer
+  cursor: pointer;
 }
 
 ul {
@@ -63,17 +62,17 @@ strong {
 }
 
 .icon {
-  color: var(--white)
+  color: var(--white);
 }
 
 .squares {
   margin-bottom: 10px;
   display: flex;
-}
 
-.square {
-  font-size: 10px;
-  color: #F9B538;
+  .square {
+    font-size: 10px;
+    color: #F9B538;
+  }
 }
 
 @media (768px <= width <= 1000px) {

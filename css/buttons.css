@@ -38,12 +38,23 @@
   color: var(--orange);
 }
 
+@media (768px <= width <= 1000px) {
+  .btn-ghost,
+  .btn-primary,
+  .btn-secondary,
+  .btn-hollow {
+    min-width: 150px;
+    height: 40px;
+    padding: 8px 18px;
+    font-size: var(--font-size-body);
+  }
+}
+
 @media (width <= 767px) {
   .btn-ghost,
   .btn-primary,
   .btn-secondary,
-  .btn-hollow,
-  .cta-btn {
+  .btn-hollow {
     min-width: 150px;
     height: 40px;
     padding: 8px 18px;

@@ -11,6 +11,18 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
+
+  @media (768px <= width <= 1000px) {
+    position: absolute;
+    padding: 10px 12px 0;
+    background: transparent;
+  }
+
+  @media (width <= 767px) {
+    position: absolute;
+    padding: 10px 12px 0;
+    background: transparent;
+  }
 }
 
 main {
@@ -18,20 +30,4 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-@media (768px <= width <= 1000px) {
-  header {
-    position: absolute;
-    padding: 10px 12px 0;
-    background: transparent;
-  }
-}
-
-@media (width <= 767px) {
-  header {
-    position: absolute;
-    padding: 10px 12px 0;
-    background: transparent;
-  }
 }
