@@ -1218,7 +1218,6 @@ main {
 
       article {
         width: 100%;
-        max-width: 520px;
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -1305,7 +1304,6 @@ main {
 
       article {
         width: 100%;
-        max-width: 420px;
         height: auto;
         padding-bottom: 32px;
       }
@@ -1322,8 +1320,7 @@ main {
 
   /* Stats Section */
   #stats {
-    flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     padding-bottom: 200px;
 
     .stat {
@@ -1355,7 +1352,6 @@ main {
 
       .review-card {
         width: 100%;
-        max-width: 320px;
       }
     }
   }
@@ -1368,8 +1364,6 @@ main {
 
     .faq-image {
       width: 100%;
-      max-width: 360px;
-      height: 280px;
     }
     
     .faq-content {
@@ -1659,7 +1653,6 @@ main {
 
       article {
         width: 100%;
-        max-width: 360px;
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -1749,7 +1742,6 @@ main {
 
       article {
         width: 100%;
-        max-width: 320px;
         height: auto;
         padding-bottom: 32px;
       }
@@ -1848,7 +1840,6 @@ main {
 
     .faq-image {
       width: 100%;
-      max-width: 320px;
       height: 240px;
     }
 
