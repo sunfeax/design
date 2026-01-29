@@ -18,6 +18,8 @@
   --font-size-heading: 20px;
   --font-size-subheading: 18px;
   --font-size-body: 15px;
+  --font-size-xs: 12px;
+  --font-size-xxs: 10px;
 }
 
 * {
@@ -75,7 +77,7 @@ strong {
   display: flex;
 
   .square {
-    font-size: 10px;
+    font-size: var(--font-size-xxs);
     color: #F9B538;
   }
 }
@@ -215,7 +217,7 @@ main {
   height: 100vh;
 
   /* imágen al fondo */
-  background-image: url('../img/backgrounds/background.png');
+  background-image: url('./img/backgrounds/background.png');
   background-size: cover;
   background-position: center;
 
@@ -354,7 +356,7 @@ main {
 
     /* un hover en futuro */
     .active {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backgrounds/we-build.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/backgrounds/we-build.jpg);
       background-size: cover;
       background-position: center;
       transform: translateY(-10px);
@@ -477,7 +479,7 @@ main {
 /* Stats Section */
 #stats {
   width: 100%;
-  background: url(../img/backgrounds/section-bg.png) bottom no-repeat;
+  background: url(./img/backgrounds/section-bg.png) bottom no-repeat;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -613,7 +615,7 @@ main {
 
       .fa-quote-left {
         color: rgba(128, 128, 128, 0.35);
-        font-size: 36px;
+        font-size: var(--font-size-title-xl);
       }
 
       p {
@@ -656,16 +658,16 @@ main {
             font-weight: 700;
           }
 
-          .rating {
-            color: var(--orange);
-            font-size: 12px;
-            display: flex;
-            gap: 3px;
+      .rating {
+        color: var(--orange);
+        font-size: var(--font-size-xs);
+        display: flex;
+        gap: 3px;
 
-            .star {
-              font-size: 15px;
-            }
-          }
+        .star {
+          font-size: var(--font-size-body);
+        }
+      }
         }
       }
     }
@@ -736,28 +738,29 @@ main {
         box-shadow: 0 10px 22px rgba(10, 16, 32, 0.05);
         overflow: hidden;
 
-        .question {
+      .question {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--text-encabezados);
+        font-size: var(--font-size-body);
+        font-weight: 500;
+        padding: 14px 16px;
+        background: var(--white);
+
+        .toggle-btn {
           display: flex;
           align-items: center;
-          gap: 12px;
+          justify-content: center;
+          width: 28px;
+          height: 28px;
           color: var(--text-encabezados);
-          font-size: var(--font-size-body);
-          font-weight: 500;
-          padding: 14px 16px;
-          background: var(--white);
-
-          .toggle-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 28px;
-            color: var(--text-encabezados);
-            background: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
-          }
+          background: transparent;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          text-decoration: none;
+        }
 
           .question-title {
             font-size: inherit;
@@ -997,6 +1000,7 @@ main {
   padding-top: 200px;
   padding-bottom: 20px;
   color: var(--text-descripcion);
+  font-size: var(--font-size-body);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1056,7 +1060,7 @@ main {
 
       .title {
         font-weight: 500;
-        font-size: var(--font-size-body);
+        font-size: var(--font-size-heading);
         color: #2f3a45;
         margin-bottom: 30px;
       }
@@ -1107,15 +1111,17 @@ main {
 @media (768px <= width <= 1200px) {
   /* Root Variables */
   :root {
-    --font-size-display: 94px;
-    --font-size-hero: 60px;
-    --font-size-title-xl: 34px;
-    --font-size-title-lg: 32px;
-    --font-size-title-md: 28px;
-    --font-size-lead: 24px;
-    --font-size-heading: 23px;
-    --font-size-subheading: 21px;
-    --font-size-body: 19px;
+    --font-size-display: 98px;
+    --font-size-hero: 64px;
+    --font-size-title-xl: 38px;
+    --font-size-title-lg: 34px;
+    --font-size-title-md: 30px;
+    --font-size-lead: 26px;
+    --font-size-heading: 25px;
+    --font-size-subheading: 23px;
+    --font-size-body: 21px;
+    --font-size-xs: 13px;
+    --font-size-xxs: 11px;
   }
 
   /* Header */
@@ -1150,9 +1156,9 @@ main {
   .btn-primary,
   .btn-secondary,
   .btn-hollow {
-    min-width: 150px;
-    height: 40px;
-    padding: 8px 18px;
+    min-width: 168px;
+    height: 45px;
+    padding: 9px 20px;
     font-size: var(--font-size-body);
   }
 
@@ -1225,15 +1231,15 @@ main {
       /* usamos :nth-child() para decorar articulos
       para tablets y móviles ya que tienen hover */
       article:nth-child(1) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-design.webp");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-design.webp");
       }
 
       article:nth-child(2) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-build.jpg");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-build.jpg");
       }
 
       article:nth-child(3) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-maintain.webp");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-maintain.webp");
       }
 
       h3 {
@@ -1398,7 +1404,7 @@ main {
       left: 0;
       transform: none;
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(1, minmax(0, 1fr));
       gap: 16px;
     }
 
@@ -1519,15 +1525,17 @@ main {
 @media (width <= 767px) {
   /* Root Variables */
   :root {
-    --font-size-display: 68px;
-    --font-size-hero: 44px;
-    --font-size-title-xl: 28px;
-    --font-size-title-lg: 26px;
-    --font-size-title-md: 24px;
-    --font-size-lead: 21px;
-    --font-size-heading: 21px;
-    --font-size-subheading: 20px;
-    --font-size-body: 18px;
+    --font-size-display: 72px;
+    --font-size-hero: 48px;
+    --font-size-title-xl: 32px;
+    --font-size-title-lg: 28px;
+    --font-size-title-md: 26px;
+    --font-size-lead: 23px;
+    --font-size-heading: 23px;
+    --font-size-subheading: 22px;
+    --font-size-body: 20px;
+    --font-size-xs: 14px;
+    --font-size-xxs: 12px;
   }
 
   /* Header */
@@ -1568,9 +1576,9 @@ main {
   .btn-primary,
   .btn-secondary,
   .btn-hollow {
-    min-width: 150px;
-    height: 40px;
-    padding: 8px 18px;
+    min-width: 168px;
+    height: 45px;
+    padding: 9px 20px;
     font-size: var(--font-size-body);
   }
 
@@ -1604,10 +1612,10 @@ main {
 
     .discover {
       display: block;
-      padding-bottom: 60px;
+      padding-bottom: 45px;
 
       &::after {
-        height: 55px;
+        height: 40px;
       }
     }
   }
@@ -1662,15 +1670,15 @@ main {
       }
 
       article:nth-child(1) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-design.webp");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-design.webp");
       }
 
       article:nth-child(2) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-build.jpg");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-build.jpg");
       }
 
       article:nth-child(3) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-maintain.webp");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-maintain.webp");
       }
 
       h3 {
@@ -1755,6 +1763,8 @@ main {
     gap: 30px;
     padding-top: 60px;
     padding-bottom: 160px;
+    background-position: center;
+    background-size: cover;
 
     .stat {
       max-width: 320px;
@@ -1773,9 +1783,9 @@ main {
     }
 
     .cta-btn {
-      min-width: 150px;
-      height: 40px;
-      padding: 8px 18px;
+      min-width: 168px;
+      height: 45px;
+      padding: 9px 20px;
       font-size: var(--font-size-body);
     }
   }
@@ -1792,7 +1802,7 @@ main {
         max-width: 360px;
 
         > p {
-          font-size: 16px;
+          font-size: var(--font-size-body);
         }
 
         .reviewer {
@@ -1809,7 +1819,7 @@ main {
             text-align: right;
 
             .name {
-              font-size: 17px;
+              font-size: var(--font-size-body);
             }
 
             .rating {
@@ -1887,7 +1897,7 @@ main {
       left: 0;
       transform: none;
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(1, minmax(0, 1fr));
       gap: 16px;
     }
 
