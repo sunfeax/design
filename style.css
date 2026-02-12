@@ -1106,6 +1106,19 @@ main {
           color: #7b8a96;
         }
       }
+
+      #firma {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1000;
+        line-height: 0;
+
+        svg {
+          width: 90px;
+          height: 54px;
+        }
+      }
     }
   }
 }
@@ -1368,7 +1381,7 @@ main {
     .faq-image {
       width: 100%;
     }
-    
+
     .faq-content {
       max-width: 600px;
     }
@@ -1511,8 +1524,12 @@ main {
       padding: 0 20px;
       .bottom-row {
         flex-direction: column;
-        gap: 12px;
         text-align: center;
+
+        #firma {
+          right: 10px;
+          bottom: 10px;
+        }
       }
     }
   }
@@ -2030,6 +2047,16 @@ main {
         .links {
           flex-wrap: wrap;
           justify-content: center;
+        }
+
+        #firma {
+          right: 12px;
+          bottom: 12px;
+
+          svg {
+            width: 72px;
+            height: 44px;
+          }
         }
       }
     }
