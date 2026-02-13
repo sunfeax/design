@@ -217,7 +217,7 @@ main {
   height: 100vh;
 
   /* imágen al fondo */
-  background-image: url('./img/backgrounds/background.png');
+  background-image: url('../img/backgrounds/background.png');
   background-size: cover;
   background-position: center;
 
@@ -386,7 +386,7 @@ main {
 
     /* un hover en futuro */
     .active {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/backgrounds/we-build.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backgrounds/we-build.jpg);
       background-size: cover;
       background-position: center;
       transform: translateY(-10px);
@@ -509,7 +509,7 @@ main {
 /* Stats Section */
 #stats {
   width: 100%;
-  background: url(./img/backgrounds/section-bg.png) bottom no-repeat;
+  background: url(../img/backgrounds/section-bg.png) bottom no-repeat;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -1282,15 +1282,15 @@ main {
       /* usamos :nth-child() para decorar articulos
       para tablets y móviles ya que tienen hover */
       article:nth-child(1) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-design.webp");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-design.webp");
       }
 
       article:nth-child(2) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-build.jpg");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-build.jpg");
       }
 
       article:nth-child(3) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-maintain.webp");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-maintain.webp");
       }
 
       h3 {
@@ -1728,15 +1728,15 @@ main {
       }
 
       article:nth-child(1) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-design.webp");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-design.webp");
       }
 
       article:nth-child(2) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-build.jpg");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-build.jpg");
       }
 
       article:nth-child(3) {
-        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("./img/backgrounds/we-maintain.webp");
+        background-image: linear-gradient(rgba(10, 16, 32, 0.7), rgba(10, 16, 32, 0.7)), url("../img/backgrounds/we-maintain.webp");
       }
 
       h3 {
